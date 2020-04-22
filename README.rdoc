@@ -1,5 +1,10 @@
 = hidden_user_profile
 
+Upgraded to Redmine 4.x
+
+To install just git clone to plugins directory 
+and restart Redmine
+
 Redmine 3.x plugin that adds a permission to view user profile.
 Hides project members box, delinkifies user profile links and disable user profile page.
 Based on Redmine v1 version by Monika Perwejnis
