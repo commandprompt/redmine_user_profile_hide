@@ -4,7 +4,7 @@ module RedmineHiddenUserProfile
 
     def self.included(base)
       base.class_eval do
-        before_filter :check_hidden_permission, :only => [:show]
+        before_action :check_hidden_permission, :only => [:show]
 
         def check_hidden_permission
           return true if User.current.id == request[:id].to_i
